@@ -114,6 +114,7 @@ body {
     transition: 0.5s;
     background: #fff;
     transform-style: preserve-3d;
+    z-index: 10;
     opacity: 1;
     transform: translate3d(-50%,-50%,50px);
 }
