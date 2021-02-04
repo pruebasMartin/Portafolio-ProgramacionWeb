@@ -63,9 +63,6 @@ header .textos-header{
 }
 
 /* Ajuste Navbar Boostrap */
-.bg-dark{
-    background-color: #04204e !important;
-}
 
 .navbar-brand{
     font-weight: bold;
