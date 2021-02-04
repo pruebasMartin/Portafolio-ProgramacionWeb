@@ -175,6 +175,22 @@ header .textos-header{
     text-transform: uppercase;
 }
 
+@media (max-width: 1080px){
+    .image{
+        flex: 100%;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 400px){
+    .image .details p{
+        font-size: 16px;
+    }
+
+    .more .read-more{
+        font-size: 18px;
+    }
+}
 
 
     /*  Ajustes Imagenes Recetas Fav    */
