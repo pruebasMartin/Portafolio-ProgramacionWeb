@@ -128,7 +128,7 @@ body {
     z-index: 11;
     transition: 0.5s;
     transform-style: preserve-3d;
-    transform: translate3d(-50%,-50%,0px) rotate(-15deg);
+    transform: translate3d(-50%,-50%,50px) rotate(-15deg);
 }
 
 .continer .box:hover .product{
