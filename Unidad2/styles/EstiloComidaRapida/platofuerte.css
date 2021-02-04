@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Ajuste Navbar Boostrap */
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 24px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.jumbotron {
+    margin-left: 1%;
+}
+
+.carousel-inner img {
+    width: 300%;
+    max-height: 600px;
+}
+
+.carousel-inner {
+    height: 450px;
+}
+
+#tamacaro {
+    float: left;
+}
