@@ -130,23 +130,16 @@ body {
     transform: translate3d(-50%,-50%,0px) rotate(-15deg);
 }
 
+.continer .box:hover .product{
+    transform: translate3d(-50%,-50%,100px) rotate(-15deg);
+}
+
 .container .box:nth-child(1) .circle,
 .container .box:nth-child(1) .ver
 {
     background: #379b37;
 }
 
-.container .box:nth-child(2) .circle,
-.container .box:nth-child(2) .ver
-{
-    background: #9bdc28;
-}
-
-.container .box:nth-child(3) .circle,
-.container .box:nth-child(3) .ver
-{
-    background: #fb4b4f;
-}
 
 /* Ajuste Navbar Boostrap */
 
