@@ -36,20 +36,7 @@ header {
 }
 
 nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-nav > a{
-    color:white;
-    font-weight: 300;
-    font-size: 30px;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-nav > a:hover{
-    text-decoration: underline;
+    height: 90px;
 }
 
 header .textos-header{
@@ -64,20 +51,11 @@ header .textos-header{
 
 /* Ajuste Navbar Boostrap */
 
-.navbar-brand{
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 24px;
-}
 
 .navbar-dark .navbar-nav .nav-link{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
-}
-
-.navbar-dark .navbar-nav .nav-item{
-    margin: 0 15px;
 }
 
 
