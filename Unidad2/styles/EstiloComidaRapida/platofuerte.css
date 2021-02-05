@@ -129,5 +129,14 @@
 }
 
 .card {
-    background-color: cyan;
+    background-color: orangered;
+}
+
+#card-header-color {
+    color: white;
+}
+
+.list-group li:hover {
+    background-color: orangered;
+    color: white;
 }
