@@ -133,27 +133,28 @@
 
                             <img src="../../assets/pozole.jpg" class="img-thumbnail" width="600">
                             <h1 class="display-4">Pozole</h1><br>
-                            <div class="centertext">
-                                <h2></h2>
 
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#ingredientes">Ingredientes</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#prepracion">Preparacion</a>
-                                    </li>
+                            <h2></h2>
 
-                                </ul>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#ingredientes">Ingredientes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#prepracion">Preparacion</a>
+                                </li>
 
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div id="ingredientes" class="container tab-pane active"><br>
+                            </ul>
 
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="card container-lg" style="width: 18rem;" id="card1">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="ingredientes" class="container tab-pane active"><br>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card container-lg" style="width: 18rem;" id="card1">
+                                                <div class="centertext">
                                                     <div class="card-header" id="card-header-color">
                                                         Para la sopa:
                                                     </div>
@@ -168,8 +169,10 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="col">
-                                                <div class="card container-lg" style="width: 18rem;" id="card2">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card container-lg" style="width: 18rem;" id="card2">
+                                                <div class="centertext">
                                                     <div class="card-header" id="card-header-color">
                                                         Para la salsa:
                                                     </div>
@@ -185,14 +188,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br>
-                                        <div class="row">
+                                    </div>
+                                    <br>
+                                    <div class="row">
 
 
-                                            <div class="col ">
-                                                <div class="card container container-lg" style="width: 18rem;" id="card3">
+                                        <div class="col ">
+                                            <div class="card container container-lg" style="width: 18rem;" id="card3">
+                                                <div class="centertext">
                                                     <div class="card-header " id="card-header-color">
-                                                        Para la sopa:
+                                                        Para la guarnición:
                                                     </div>
                                                     <ul class="list-group list-group-flush">
                                                         <li class="list-group-item">1 lechuga finamente picada</li>
@@ -209,18 +214,53 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="prepracion" class="container tab-pane fade"><br>
-                                        <h3>Menu 1</h3>
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-
                                 </div>
+                                <div id="prepracion" class="container tab-pane fade"><br>
+                                    <h3>Instrucciones</h3>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                        <label class="custom-control-label" for="customCheck">1. Pon el agua a calentar en una olla grande. Agrega la cebolla, el ajo, la sal, la carne 
+                                            y las costillas. Deja que suelte el hervor y después baja la flama para que se cocine la carne por aproximadamente 2 horas y media, o hasta que 
+                                            ésta se despegue del hueso.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2" name="example2">
+                                        <label class="custom-control-label" for="customCheck2">2. Mientras se cuece la carne, remueve con un cucharón la capa de espuma y grasa que se vaya formando en la superficie del caldo. 
+                                            Si es necesario agrega más agua caliente para mantener el mismo nivel de caldo en la olla.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3">
+                                        <label class="custom-control-label" for="customCheck3">3. Cuando la carne se cueza, sepárala del caldo. Quítale al caldo el exceso de grasa, los huesos de las costillas, la cebolla y el ajo.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4" name="example4">
+                                        <label class="custom-control-label" for="customCheck4">4. Para preparar la salsa, remoja los chiles anchos y guajillo durante 25 minutos en suficiente agua que los cubra.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5" name="example5">
+                                        <label class="custom-control-label" for="customCheck5">5. Una vez que los chiles estén blandos, escúrrelos y colócalos en la licuadora junto con el ajo, la cebolla y el orégano, agregando un poco del agua donde se remojaron éstos. Licua hasta que tenga la consistencia de una salsa suave.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6" name="example6">
+                                        <label class="custom-control-label" for="customCheck6">6. Calienta el aceite en un sartén a temperatura media alta; agrega la salsa, y sazona con sal al gusto. (Revuelve constantemente, ya que tiende a brincar). Reduce la flama y hierve a fuego lento por aprox. 25 minutos.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7" name="example7">
+                                        <label class="custom-control-label" for="customCheck7">7. Agrega la salsa al caldo pasándola primero por un colador. Deja que suelte el hervor y agrega la carne. Hierve a fuego bajo por aprox. 10 minutos. Agrega el maíz y sazona con sal y pimienta. Sigue cocinando hasta que el maiz este cocido completament</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck8" name="example18">
+                                        <label class="custom-control-label" for="customCheck8">7. Sirve el pozole en plato hondo y coloca la guarnición a un lado como se muestra en la foto.</label>
+                                    </div>
+                                </div>
+
                             </div>
+
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
                         </div>
                     </div>
                 </div>
