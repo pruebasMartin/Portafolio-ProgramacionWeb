@@ -21,14 +21,18 @@ body {
     margin-left: 1%;
 }
 
-.carousel-inner img {
-    width: 300%;
-    max-height: 600px;
+.carousel-inner {
+    width: 60%;
+    margin: 0 auto;
+    height: 50%;
+    border-radius: 80px;
 }
 
-.carousel-inner {
-    height: 450px;
+.carousel-control-prev{
+    margin: 300px;
+    margin-bottom: 8000px;
 }
+
 
 
 #cardbody2 {
