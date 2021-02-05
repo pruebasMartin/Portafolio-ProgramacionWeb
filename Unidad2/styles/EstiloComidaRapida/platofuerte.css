@@ -140,3 +140,7 @@
     background-color: orangered;
     color: white;
 }
+
+.card {
+    align-content: center;
+}
