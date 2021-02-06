@@ -7,6 +7,10 @@
 
 /* Ajuste Navbar Boostrap */
 
+nav.navbar {
+    background-color: rgba(200, 20, 20, 0.7);
+}
+
 .navbar-brand {
     font-weight: bold;
     font-family: monospace;
