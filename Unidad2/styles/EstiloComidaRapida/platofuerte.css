@@ -11,6 +11,7 @@
     font-weight: bold;
     font-family: monospace;
     font-size: 24px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .navbar-brand:hover {
