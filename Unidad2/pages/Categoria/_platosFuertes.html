@@ -18,7 +18,7 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent scrolling-navbar fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
             <!--Alineado al fin-->
             <div class="container">
                 <a class="navbar-brand" href="#">Recetas</a>
@@ -103,7 +103,7 @@
                             <p class="card-text">Se considera también un remedio casero contra los enfriamientos y los catarros.</p>
                         </div>
                         <div class="container">
-                            <button type="button" id="botoncard3" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                            <button type="button" id="botoncard3" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalabel2">
                                 Ver Receta
                               </button>
                         </div>
@@ -116,7 +116,7 @@
     </div>
     <br><br><br><br>
 
-    <!-- Modal -->
+    <!----------------------------------------------------------------------- Modal --------------------------------------------------------------------------->
     <div class="modal fade" id="modalabel1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" id="tamanomodal1" role="document">
             <div class="modal-content">
@@ -133,27 +133,28 @@
 
                             <img src="../../assets/pozole.jpg" class="img-thumbnail" width="600">
                             <h1 class="display-4">Pozole</h1><br>
-                            <div class="centertext">
-                                <h2></h2>
 
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#ingredientes">Ingredientes</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#prepracion">Preparacion</a>
-                                    </li>
+                            <h2></h2>
 
-                                </ul>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#ingredientes">Ingredientes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#prepracion">Preparacion</a>
+                                </li>
 
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div id="ingredientes" class="container tab-pane active"><br>
+                            </ul>
 
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="card container-lg" style="width: 18rem;" id="card1">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="ingredientes" class="container tab-pane active"><br>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card container-lg" style="width: 18rem;" id="card1">
+                                                <div class="centertext">
                                                     <div class="card-header" id="card-header-color">
                                                         Para la sopa:
                                                     </div>
@@ -168,8 +169,10 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="col">
-                                                <div class="card container-lg" style="width: 18rem;" id="card2">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card container-lg" style="width: 18rem;" id="card2">
+                                                <div class="centertext">
                                                     <div class="card-header" id="card-header-color">
                                                         Para la salsa:
                                                     </div>
@@ -185,14 +188,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br>
-                                        <div class="row">
+                                    </div>
+                                    <br>
+                                    <div class="row">
 
 
-                                            <div class="col ">
-                                                <div class="card container container-lg" style="width: 18rem;" id="card3">
+                                        <div class="col ">
+                                            <div class="card container container-lg" style="width: 18rem;" id="card3">
+                                                <div class="centertext">
                                                     <div class="card-header " id="card-header-color">
-                                                        Para la sopa:
+                                                        Para la guarnición:
                                                     </div>
                                                     <ul class="list-group list-group-flush">
                                                         <li class="list-group-item">1 lechuga finamente picada</li>
@@ -209,39 +214,212 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="prepracion" class="container tab-pane fade"><br>
-                                        <h3>Menu 1</h3>
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-
                                 </div>
+                                <div id="prepracion" class="container tab-pane fade"><br>
+                                    <h3>Instrucciones</h3>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                        <label class="custom-control-label" for="customCheck">1. Pon el agua a calentar en una olla grande. Agrega la cebolla, el ajo, la sal, la carne 
+                                            y las costillas. Deja que suelte el hervor y después baja la flama para que se cocine la carne por aproximadamente 2 horas y media, o hasta que 
+                                            ésta se despegue del hueso.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2" name="example2">
+                                        <label class="custom-control-label" for="customCheck2">2. Mientras se cuece la carne, remueve con un cucharón la capa de espuma y grasa que se vaya formando en la superficie del caldo. 
+                                            Si es necesario agrega más agua caliente para mantener el mismo nivel de caldo en la olla.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3">
+                                        <label class="custom-control-label" for="customCheck3">3. Cuando la carne se cueza, sepárala del caldo. Quítale al caldo el exceso de grasa, los huesos de las costillas, la cebolla y el ajo.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4" name="example4">
+                                        <label class="custom-control-label" for="customCheck4">4. Para preparar la salsa, remoja los chiles anchos y guajillo durante 25 minutos en suficiente agua que los cubra.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5" name="example5">
+                                        <label class="custom-control-label" for="customCheck5">5. Una vez que los chiles estén blandos, escúrrelos y colócalos en la licuadora junto con el ajo, la cebolla y el orégano, agregando un poco del agua donde se remojaron éstos. Licua hasta que tenga la consistencia de una salsa suave.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6" name="example6">
+                                        <label class="custom-control-label" for="customCheck6">6. Calienta el aceite en un sartén a temperatura media alta; agrega la salsa, y sazona con sal al gusto. (Revuelve constantemente, ya que tiende a brincar). Reduce la flama y hierve a fuego lento por aprox. 25 minutos.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7" name="example7">
+                                        <label class="custom-control-label" for="customCheck7">7. Agrega la salsa al caldo pasándola primero por un colador. Deja que suelte el hervor y agrega la carne. Hierve a fuego bajo por aprox. 10 minutos. Agrega el maíz y sazona con sal y pimienta. Sigue cocinando hasta que el maiz este cocido completament</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck8" name="example18">
+                                        <label class="custom-control-label" for="customCheck8">7. Sirve el pozole en plato hondo y coloca la guarnición a un lado como se muestra en la foto.</label>
+                                    </div>
+                                </div>
+
                             </div>
+
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------------------------------------Modal 2------------------------------------------------------------------------------->
+
+    <div class="modal fade" id="modalabel2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" id="tamanomodal1" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Receta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col">
+
+                        <div class="jumbotron">
+
+                            <img src="../../assets/sopa.jpg" class="img-thumbnail" width="600">
+                            <h1 class="display-4">Sopa de Pollo</h1><br>
+
+                            <h2></h2>
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#ingredientesb">Ingredientes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#prepracionb">Preparacion</a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="ingredientesb" class="container tab-pane active"><br>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card container-lg" style="width: 18rem;" id="card1">
+                                                <div class="centertext">
+                                                    <div class="card-header" id="card-header-color">
+                                                        Para la sopa:
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">1 pollo completo</li>
+                                                        <li class="list-group-item">8 tazas de agua</li>
+                                                        <li class="list-group-item">2 cucharaditas de sal</li>
+                                                        <li class="list-group-item">½ cebolla blanca mediana</li>
+                                                        <li class="list-group-item">4 dientes de ajo pelados</li>
+                                                        <li class="list-group-item">2 ramas de apio cortadas en trozos</li>
+                                                        <li class="list-group-item">3 ramas de perejil</li>
+                                                        <li class="list-group-item">3 zanahorias grandes cortadas en 3 pedazos cada una</li>
+                                                        <li class="list-group-item">2 ramas de cilantro</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card container-lg" style="width: 18rem;" id="card2">
+                                                <div class="centertext">
+                                                    <div class="card-header" id="card-header-color">
+                                                        Guarnición:
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">1 aguacate partido en cubos</li>
+                                                        <li class="list-group-item">½ cebolla blanca finamente picada</li>
+                                                        <li class="list-group-item">1 limón partido en secciones</li>
+                                                        <li class="list-group-item">1 chile serrano o jalapeño picadito</li>
+                                                        <li class="list-group-item">2 ramas de cilantro picadita</li>
+                                                        <li class="list-group-item">½ cucharadita cafetera de orégano mexicano</li>
+                                                        <li class="list-group-item">Tortillas de maíz calientes</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                </div>
+                                <div id="prepracionb" class="container tab-pane fade"><br>
+                                    <h3>Instrucciones</h3>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheckwb" name="example1wb">
+                                        <label class="custom-control-label" for="customCheckb">1. Echa el pollo, el agua y la sal en una olla grande, y empieza a 
+                                            cocinar a temperatura media alta hasta que suelte el hervor. Una vez que suelte el hervor se formará espuma en la superficie; procede a removerla y desecharla.</label>
+                                    </div>
+
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2b" name="example2b">
+                                        <label class="custom-control-label" for="customCheck2b">2. Después de quitar la espuma, agrega la cebolla, el ajo y el apio, y cubre la olla parcialmente. 
+                                            Baja la temperatura y cocina lentamente por aprox. 30 minutos sin dejarlo que hierva..</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3b" name="example3b">
+                                        <label class="custom-control-label" for="customCheck3b">3. Agrega las zanahorias y el cilantro. (Si deseas usar otras verduras deberás agregarlas 15 minutos después de haberle puesto las zanahorias, ya que éstas tardan más en cocinarse). En este momento verifica si el pollo ya está cocido y tierno. Si ya está cocido, retíralo y pónlo en un recipiente aparte.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4b" name="example4b">
+                                        <label class="custom-control-label" for="customCheck4b">4. Sigue cocinando el caldo por 10 minutos más hasta que las zanahorias estén completamente cocidas.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5b" name="example5b">
+                                        <label class="custom-control-label" for="customCheck5b">5. Cuando las piezas del pollo no estén tan calientes, deshébralas o pártelas en pedazos pequeños. Cuando las zanahorias ya estén cocidas, pártelas en cubos y sepáralas.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6b" name="example6b">
+                                        <label class="custom-control-label" for="customCheck6b">6. Cuela el caldo usando un colador fino. Regresa el caldo a la olla donde se cocinó; déjalo reposar por 10 minutos y quita el exceso de grasa que se formó en la superficie. Si no vas a consumir el caldo inmediatamente lo puedes meter al refrigerador, y cuando esté frío podrás remover la grasa más fácilmente.</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7b" name="example7b">
+                                        <label class="custom-control-label" for="customCheck7b">7. Calienta el caldo a temperatura media baja, y verifica si necesita más sal para tu gusto. Cuando ya vayas a servir, coloca un poco de arroz, pollo deshebrado o partido en cubitos, y caldo de pollo. Coloca la guarnición al lado para que cada quien se sirva a su gusto.</label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
 
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js " integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF " crossorigin="anonymous "></script>
 
-            <!-- JQuery -->
-            <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-            <!-- Bootstrap tooltips -->
-            <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "></script>
-            <!-- Bootstrap core JavaScript -->
-            <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js "></script>
-            <!-- MDB core JavaScript -->
-            <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js "></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js " integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF " crossorigin="anonymous "></script>
+
+    <!-- JQuery -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js "></script>
 </body>
 
 </html>
