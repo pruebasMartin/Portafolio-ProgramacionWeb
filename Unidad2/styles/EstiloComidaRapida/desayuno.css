@@ -1,0 +1,55 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.main-header{
+    background-image: url(../../assets/desayuno_fondo.jpg);
+    background-size: cover;
+    
+}
+
+.background-overlay{
+    background-color: rgba(46, 213, 115, .6);
+}
+
+.main-header .row{
+    height: 300px;
+}
+
+.button-header .nav-link:hover{
+    background-color: white;
+    color: black !important;
+}
+
+.card{
+    width: 500px;
+}
+
+.card:hover{
+    background-color: green;
+    color: white !important;
+}
+
+.card .btn{
+    background-color: green;
+     border-color: white;
+}
+
+.card .btn:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+
+.container-fluid{
+    color: white;
+}
+.fab{
+    font-size: 50px;
+}
+
+
+.container-fluid hr{
+    background-color: green;
+}
