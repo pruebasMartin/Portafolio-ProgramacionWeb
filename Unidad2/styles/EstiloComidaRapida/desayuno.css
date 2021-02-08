@@ -5,7 +5,16 @@ html{
 .main-header{
     background-image: url(../../assets/desayuno_fondo.jpg);
     background-size: cover;
+    font-family: cursive;
     
+}
+
+.main-header h1{
+    font-size: 80px;
+}
+
+.main-header p{
+    font-size: 30px;
 }
 
 .background-overlay{
@@ -14,6 +23,10 @@ html{
 
 .main-header .row{
     height: 300px;
+}
+
+.button-header .nav-link{
+    border-color: white;
 }
 
 .button-header .nav-link:hover{
@@ -32,7 +45,7 @@ html{
 
 .card .btn{
     background-color: green;
-     border-color: white;
+    border-color: white;
 }
 
 .card .btn:hover{
@@ -53,3 +66,24 @@ html{
 .container-fluid hr{
     background-color: green;
 }
+
+.modal-header, .modal-footer{
+    background-color: green;
+    color: white;
+}
+
+.modal-header .close{
+    color: white;
+} 
+
+.modal-footer .btn{
+    border-color: white;  
+    color: white; 
+}
+
+.modal-footer .btn:hover{
+    background-color: white !important;
+    color: black;
+    border-color: black;
+}
+
