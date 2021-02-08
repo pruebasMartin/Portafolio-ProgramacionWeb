@@ -5,7 +5,16 @@ html{
 .main-header{
     background-image: url(../../assets/desayuno_fondo.jpg);
     background-size: cover;
+    font-family: cursive;
     
+}
+
+.main-header h1{
+    font-size: 80px;
+}
+
+.main-header p{
+    font-size: 30px;
 }
 
 .background-overlay{
@@ -14,6 +23,10 @@ html{
 
 .main-header .row{
     height: 300px;
+}
+
+.button-header .nav-link{
+    border-color: white;
 }
 
 .button-header .nav-link:hover{
@@ -32,7 +45,7 @@ html{
 
 .card .btn{
     background-color: green;
-     border-color: white;
+    border-color: white;
 }
 
 .card .btn:hover{
@@ -53,3 +66,56 @@ html{
 .container-fluid hr{
     background-color: green;
 }
+
+.modal-header{
+    background-color: green;
+    color: white;
+}
+
+.modal-header .close{
+    color: white;
+} 
+
+
+
+/*  Footer  */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #04df21;
+    padding-bottom: 5px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+

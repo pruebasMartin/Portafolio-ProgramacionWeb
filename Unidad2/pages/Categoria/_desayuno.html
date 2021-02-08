@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cocina Sin Limites</title>
+  <link rel="icon" href="../../assets/Logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="../../styles/EstiloComidaRapida/desayuno.css">
+  
   
 </head>
 <body>
   
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: green;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: green;">
       <div class="container">
         
       <div class="d-flex align-items-center">
         <a class="navbar-brand" href="../index.html">
-          <img src="../../assets/Logo2.png" alt="Logo" style="width: 15%;">
+          <img src="../../assets/Logo2.png" alt="Logo" style="width: 30%;">
         </a>
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,35 +50,41 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center justify-content-center align-self-center">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, a!</p>
+            <h1 class="p-3">Desayunos</h1>
+            <p>Desayunos Mexicanos para comenzar el día con el pie derecho</p>
           </div>
         </div>
       </div>
 
     </div>
   </section>
-
+<!-- CARDS -->
   <section id="section-cards" class="py-5" >
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-12 pb-sm-5">
           <div class="card text-center mx-auto">
-            <img src="../../assets/desayuno_hongo.jpg" class="card-img-top" alt="Desayuno de hongos">
+            <img src="../../assets/desayuno_chilaquiles2.jpg" class="card-img-top" alt="Desayuno chilaquiles">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">CHILAQUILES CON SALSA DE HABANERO</h5>
+              <p class="card-text">¿Eres de los que aman el picante? Te retamos a probar los chilaquiles con salsa de habanero, son súper picosos, pero deliciosos, así que siempre valdrá la pena probarlos.
+                 <br>Sabemos…</p>
+              <!-- <a href="#" class="btn btn-primary data-toggle="modal" data-target="#buttonOne"">Button one</a> -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#buttonOne">
+                Vamos a la receta
+              </button>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="card text-center mx-auto"">
-            <img src="../../assets/desayuno_chilaquiles.jpg" class="card-img-top" alt="...">
+            <img src="../../assets/desayuno_huevos_turca.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">HUEVOS A LA TURCA</h5>
+              <p class="card-text">Este desayuno un tanto gourmet es exquisito. Si nunca has probado los huevos a la turca te estás perdiendo de un suculento platillo. Conoce qué ingredientes necesitas para hacer…</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#buttonTwo">
+                Vamos a la receta
+              </button>
             </div>
           </div>
         </div>
@@ -85,37 +93,304 @@
 
   </section>
 
-  <footer id="section-nosotros">
-    <div class="container-fluid bg-dark p-5">
-      <div class="row text-center ">
-        <div class="col-4 ">
-          <i class="fab fa-github-alt" id="fab-ivan"></i>
-          <hr>
-          <p>martinGM05</p>
-          <p>manolo2603</p>
-          <p>ivanCordova</p>
-        </div>
-        <div class="col-4">
-          <i class="fab fa-google"></i>
-          <hr>
-          <p>mtn.gm05@gmail.com</p>
-          <p>manuelfrancis44@gmail.com</p>
-          <p>talivan1602@gmail.com</p>
-        </div>
-        <div class="col-4">
-          <i class="fab fa-linkedin"></i>
-          <hr>
-          <p>MartinGonzálezMiranda</p>
-        </div>
+<!-- MODAL WINDOW -->
+
+<div class="modal fade" id="buttonOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CHILAQUILES CON SALSA DE HABANERO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <hr>
-          <h2 class="titulo-final text-center">&copy; Martín González Miranda | Manuel Francisco Peña | Ivan Cordova Rodríguez
+      <div class="modal-body">
+        <!-- ----------------------------------------------------------------- -->  
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">INGREDIENTES</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">INSTRUCCIONES</a>
+          </li>
+          
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1">4 tazas de totopos</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch2">
+              <label class="custom-control-label" for="customSwitch2">1/2 pechuga de pollo cocido y deshebrado</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch3">
+              <label class="custom-control-label" for="customSwitch3">1/2 taza de crema</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch4">
+              <label class="custom-control-label" for="customSwitch4">1 aguacate</label>
+            </div>
+
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch5">
+              <label class="custom-control-label" for="customSwitch5">1 jitomate picado</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch6">
+              <label class="custom-control-label" for="customSwitch6">4 cucharadas de cilantro picado</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch7">
+              <label class="custom-control-label" for="customSwitch7">2 limones</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch8">
+              <label class="custom-control-label" for="customSwitch8">2 rábanos en láminas delgadas</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch9">
+              <label class="custom-control-label" for="customSwitch9">1/2 taza de queso desmoronado</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch10">
+              <label class="custom-control-label" for="customSwitch10">1 chile habanero en tiras</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch11">
+              <label class="custom-control-label" for="customSwitch11">3 chiles habaneros</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch12">
+              <label class="custom-control-label" for="customSwitch12">2 dientes de ajo</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch13">
+              <label class="custom-control-label" for="customSwitch13">1/4 de cebolla</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch14">
+              <label class="custom-control-label" for="customSwitch14">3 tomates verdes</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch15">
+              <label class="custom-control-label" for="customSwitch15">2 jitomates</label>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <ul style="list-style: none;">
+              <br>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Para la salsa hierve los ingredientes durante 10 minutos y licúa, rectifica el sazón.</label>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">En un tazón integra el aguacate con el jitomate, cilantro y jugo de limón, salpimienta.</label>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck3">
+                  <label class="custom-control-label" for="customCheck3">Combina los totopos con la salsa, divide en cuatro platos y termina con el guacamole, pollo deshebrado, rábano, queso, crema y tiras de habanero.</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+
+        <!-- ---------------------------------------------------------------- -->
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal" style="background-color: green;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="tab2">
+  <div class="modal fade" id="buttonTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">HUEVOS A LA TURCA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- ----------------------------------------------------------------- -->  
+  
+          <ul class="nav nav-tabs" id="myTab2" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="true">INGREDIENTES</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">INSTRUCCIONES</a>
+            </li>
+            
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+              
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch16">
+                <label class="custom-control-label" for="customSwitch16">8 huevos</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch17">
+                <label class="custom-control-label" for="customSwitch17">1 taza de queso feta desmoronado</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch18">
+                <label class="custom-control-label" for="customSwitch18">1/2 cebolla picada</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch19">
+                <label class="custom-control-label" for="customSwitch19">2 dientes de ajo picados</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch20">
+                <label class="custom-control-label" for="customSwitch20">5 jitomates picados</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch21">
+                <label class="custom-control-label" for="customSwitch21">1 taza de caldo de pollo</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch22">
+                <label class="custom-control-label" for="customSwitch22">15 hojas de menta fresca</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch23">
+                <label class="custom-control-label" for="customSwitch23">2 cucharadas de chile chipotle en polvo</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch24">
+                <label class="custom-control-label" for="customSwitch24">1 pizca de comino</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch25">
+                <label class="custom-control-label" for="customSwitch25">3 cucharadas de aceite de oliva</label>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+              <ul style="list-style: none;">
+                <br>
+                <li>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                    <label class="custom-control-label" for="customCheck4">En una olla sofríe la cebolla y el ajo con el aceite de oliva.</label>
+                  </div>
+                </li>
+                <br>
+                <li>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5">Cuando comiencen a dorar, agrega el jitomate picado. Cuece hasta que éste se deshaga, salpimienta y agrega el chile chipotle y el comino. Añade el caldo de pollo y cuece cinco minutos más.</label>
+                  </div>
+                </li>
+                <br>
+                <li>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                    <label class="custom-control-label" for="customCheck6">Divide la salsa en cuatro sartenes individuales, calienta y cuando comiencen a hervir, rompe dos huevos sobre cada uno. Agrega la menta, el queso feta y cuece a fuego bajo al término que te guste.</label>
+                  </div>
+                </li>
+                <br>
+                <li>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck7">
+                    <label class="custom-control-label" for="customCheck7">Termina con el chile chipotle. Sirve caliente.</label>
+                  </div>
+                </li>
+                <br>
+              </ul>
+            </div>
+            
+          </div>
+  
+          <!-- ---------------------------------------------------------------- -->
+  
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal" style="background-color: green;">Close</button>
         </div>
       </div>
     </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+    <!--        FOOTER START      -->
+    <footer id="About">
+      <div class="contenedor-footer">
+          <div class="content-foo">
+              <h4><i class="fab fa-github"></i></h4>
+              <a href="https://github.com/martinGM05">
+                  <p>martinGM05</p>
+              </a>
+              <a href="https://github.com/manolo2603">
+                  <p>manolo2603</p>
+              </a>
+              <a href="https://github.com/ivanCordova">
+                  <p>ivanCordova</p>
+              </a>
+              
+          </div>
+          <div class="content-foo">
+              <h4><i class="fab fa-google"></i></h4>
+              <p>mtn.gm05@gmail.com</p>
+              <p>manuelfrancis44@gmail.com</p>
+              <p>talivan1602@gmail.com</p>
+          </div>
+          <div class="content-foo">
+              <h4><i class="fab fa-facebook"></i></i></h4>
+              <a href="https://www.facebook.com/martin.gonzalezmiranda/">
+                  <p>Martín González Miranda</p>
+              </a>
+              <a href="https://www.facebook.com/manuel.franciscopena.7">
+                  <p>Manuel Francisco Peña</p>
+              </a>
+              <a href="https://www.facebook.com/ivan.cordova.3517/">
+                  <p>Ivan Córdova Rodríguez</p>
+              </a>
+          </div>
+      </div>
+      <h2 class="titulo-final">&copy; Martín González Miranda | Manuel Francisco Peña | Ivan Cordova Rodríguez
+      </h2>
   </footer>
+  <!--        FOOTER END      -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
