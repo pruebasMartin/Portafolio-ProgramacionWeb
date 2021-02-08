@@ -360,7 +360,7 @@ h3{
 }
 
 .titulares{
-    margin-left: 550px;
+    margin-left: 35%;
     display: inline-block;
     position: relative;
     color: rgb(0, 0, 0);
@@ -370,7 +370,7 @@ h3{
 }
 
 .titulares2{
-    margin-left: 350px;
+    margin-left: 20%;
     display: inline-block;
     position: relative;
     margin-top: 50px;

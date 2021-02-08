@@ -347,6 +347,10 @@ footer{
     color: #ccc;
 }
 
+.content-foo p:hover{
+    color: white;
+}
+
 .titulo-final{
     text-align: center;
     font-size: 24px;
