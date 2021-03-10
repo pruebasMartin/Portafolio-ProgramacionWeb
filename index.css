@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(31, 128, 95);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 330vh;
+    justify-content: center;
+    align-items: center;
+}
