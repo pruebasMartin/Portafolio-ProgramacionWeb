@@ -24,5 +24,6 @@
           <input type="submit" class="submit" value="Entrar">
           <span class="logn-form-copy">¿No tienes una cuenta? <a href="/" class="login-form__sign-up">Crear Cuenta</a></span>
     </form>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
