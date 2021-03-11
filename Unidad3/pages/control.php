@@ -19,11 +19,20 @@ if (!isset($_SESSION['NombreUsuario'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control Principal</title>
+    <link rel="stylesheet" href="../styles/control.css">
     <?php
     include('../layout/disenio.php');
     ?>
-    <link rel="stylesheet" href="../styles/control.css">
+    <style type="text/css">
+        body {
+            background-color: rgb(3, 21, 48);
+        }
+    </style>
+
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+
 </head>
 
 <body>
@@ -31,13 +40,32 @@ if (!isset($_SESSION['NombreUsuario'])) {
     include("../Layout/navbar.php");
     ?>
     <div class="container">
-        <div class="card">
+        <div class="card" id="cardPacientes">
             <div class="box">
                 <div class="content">
-                    <h2>01</h2>
-                    <h3>Card One</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita illum impedit fugit inventore? Similique voluptate dicta quidem qui dolorem magni consequuntur quos veniam maiores reprehenderit aspernatur, rerum, ipsa placeat.</p>
-                    <a href="#">Read More</a>
+                    <h2 style="padding-top: 15px;"><i class="fas fa-head-side-mask"></i></h2>
+                    <br><br>
+                    <h3>Pacientes</h3>
+                    <br>
+                    <p>Los salud de nuestros pacientes es lo más importante para mi.</p>
+                    <a href="#">Ver Pacientes</a>
+                    <a href="AgregarPaciente.php" style="background: #28f321;">Agregar Pacientes</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-hospital-alt" style="font-size: 180px;"></i>
+        </div>
+
+        <div class="card" id="cardDepartamentos">
+            <div class="box">
+                <div class="content">
+                    <br><br>
+                    <h2 style="padding-top: 15px;"><i class="fas fa-hospital-user"></i></h2>
+                    <br>
+                    <h3>Departamentos</h3>
+                    <p>En este apartado podemos ver nuestors departamentos</p>
+                    <a href="#">Ver Departamentos</a>
                 </div>
             </div>
         </div>
