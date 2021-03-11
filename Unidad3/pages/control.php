@@ -22,6 +22,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
     <?php
     include('../layout/disenio.php');
     ?>
+    <link rel="stylesheet" href="../styles/control.css">
     <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 
@@ -29,6 +30,18 @@ if (!isset($_SESSION['NombreUsuario'])) {
     <?php
     include("../Layout/navbar.php");
     ?>
+    <div class="container">
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Card One</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita illum impedit fugit inventore? Similique voluptate dicta quidem qui dolorem magni consequuntur quos veniam maiores reprehenderit aspernatur, rerum, ipsa placeat.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
