@@ -1,0 +1,27 @@
+.nav-link {
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 40px;
+  white-space: nowrap;
+  float: right;
+  justify-content: right;
+}
+
+.dropdown-item {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.circulo {
+  width: 5%;
+  height: 5%;
+  background-color: #2e54e0;
+  border-radius: 100%;
+}
+
+.circulo > .imagen {
+  width: 100%;
+  height: 100%;
+}
