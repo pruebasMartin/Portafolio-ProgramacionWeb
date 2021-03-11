@@ -10,6 +10,7 @@ $login = $sentencia->fetch(PDO::FETCH_OBJ);
 
 if($login){
     $_SESSION['NombreUsuario'] = $login->Nombre;
+    $_SESSION['IdUsuario'] = $login->idUsuario;
     header("location: ../pages/control.php");
 }
 else{
