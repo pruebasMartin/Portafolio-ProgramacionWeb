@@ -1,3 +1,15 @@
+<?php
+session_start();
+if (!isset($_SESSION['NombreUsuario'])) {
+    header("location: login.php?Error=401");
+} else {
+    include "../Database/conexion.php";
+    $IdUsuario = $_SESSION['IdUsuario'];
+    $sql = "select * from Usuario where idUsuario=" . $IdUsuario;
+    $resultado = $cn->query($sql);
+    $imagenUsuario = $resultado->fetch(PDO::FETCH_OBJ);
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +19,7 @@
     <title>Registro Paciente</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/AgregarPaciente.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 <body>
     <?php
