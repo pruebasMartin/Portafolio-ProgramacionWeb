@@ -15,7 +15,7 @@ $NombreArchivo = $_FILES['imagenPaciente']['name'];
 $directorioTemporal = $_FILES['imagenPaciente']['tmp_name'];
 $tamanio = $_FILES['imagenPaciente']['size'];
 $imagenPaciente = file_get_contents($directorioTemporal);
-$urlPacientes = "Imagenes/";
+$urlPacientes = "img/";
 $extImagen = strtolower(pathinfo($NombreArchivo, PATHINFO_EXTENSION));
 $urlImagen = $urlPacientes.$nombrePaciente.".".$extImagen;
 move_uploaded_file($directorioTemporal,$urlImagen);
