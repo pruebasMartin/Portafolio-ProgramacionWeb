@@ -8,12 +8,11 @@
 }
 
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
-  background: #2752d3;
+  background: #232427;
 }
 
 .container {
@@ -35,6 +34,7 @@ body {
               -5px -5px 15px rgba(255, 255, 255, 0.1);
  border-radius: 15px;
  margin: 30px;
+ background: rgba(211, 185, 226, 0.397);
 }
 
 .container .card .box{
@@ -52,5 +52,5 @@ body {
 
 .container .card .box:hover{
     transform: translateY(-50px);
-    
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
 }
