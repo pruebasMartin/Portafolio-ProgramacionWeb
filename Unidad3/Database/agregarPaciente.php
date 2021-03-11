@@ -30,5 +30,5 @@ try{
 }
 
 //echo "".$nombrePaciente.$edadPaciente.$alergiasPaciente.$enfermedadesCroniPaciente.$urlImagen.$imagenPaciente.$numero;
-echo "<a href='../pages/AgregarPaciente.php'>agregar</a>";
+echo "<a href='../pages/control.php'>agregar</a>";
 ?>
