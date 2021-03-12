@@ -42,16 +42,18 @@ if (!isset($_SESSION['NombreUsuario'])) {
         <div class="row row-cols-1 row-cols-md-3">
                 <?php
                 
-                $sql="select count(idArea) as noarea from area";
+                $sql="select count(idArea) as noarea from Area";
                 $cantidad=$cn->query($sql);
                 $Noareas = $cantidad->fetch(PDO::FETCH_OBJ);
                // echo "".$Noareas->noarea;
                 
                 for($i=1;$i<=$Noareas->noarea;$i++){
-                    $sql = "select a.NombreArea, a.urlImagen, a.Especialista, a.Piso, a.Habitacion, count(p.idArea) as actCount from area as a inner join paciente as p on p.idArea=a.idArea where P.idArea=".$i;
+                    $sql = "select a.NombreArea, a.urlImagen, a.Especialista, a.Piso, a.Habitacion, count(p.idArea) as actCount from Area as a inner join Paciente as p on p.idArea=a.idArea where p.idArea=".$i;
                     $resultado = $cn->query($sql);
                     $areas = $resultado->fetchAll(PDO::FETCH_OBJ);
+
                 foreach ($areas as $area) {
+                    if($area->actCount!=0){
                     echo "<div class='col mb-4'>";
                     echo "<div class='card'>";
                     echo "<div class='card-body'>";
@@ -75,6 +77,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";
+                }
                 }
             }
                 ?>

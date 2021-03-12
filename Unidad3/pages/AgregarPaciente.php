@@ -54,7 +54,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
                                 <select name="especialidad" id="" class="form-control">
                                     <?php
                                     include "../Database/conexion.php";
-                                    $sql = "select * from area";
+                                    $sql = "select * from Area";
                                     $resultado = $cn->query($sql);
                                     $areas = $resultado->fetchAll(PDO::FETCH_OBJ);
                                     foreach ($areas as $area) {

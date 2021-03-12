@@ -11,7 +11,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
     $imagenUsuario = $resultado->fetch(PDO::FETCH_OBJ);
 
     $Idpaciente=$_GET['IdPaciente'];
-    $sql = "select * from paciente where idPaciente=" . $Idpaciente;
+    $sql = "select * from Paciente where idPaciente=" . $Idpaciente;
     $resultado = $cn->query($sql);
     $paciente = $resultado->fetch(PDO::FETCH_OBJ);
 }
@@ -63,7 +63,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
                                 <select name="especialidad" id="" class="form-control">
                                     <?php
                                     include "../Database/conexion.php";
-                                    $sql = "select * from area";
+                                    $sql = "select * from Area";
                                     $resultado = $cn->query($sql);
                                     $areas = $resultado->fetchAll(PDO::FETCH_OBJ);
                                     foreach ($areas as $area) {

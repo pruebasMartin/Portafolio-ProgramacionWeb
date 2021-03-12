@@ -33,7 +33,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
 
 <body>
     <?php
-    include("../Layout/navbar.php");
+    include("../layout/navbar.php");
     ?>
     <div class="container">
         <div class="card" id="cardPacientes">

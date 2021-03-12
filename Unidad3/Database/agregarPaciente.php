@@ -26,7 +26,7 @@ move_uploaded_file($directorioTemporal,$urlImagen);
     try{
         $sql=$cn->prepare("insert into Paciente ( NombrePaciente, Edad, Alergias, Enfermedades, urlImagen, imagen, idArea) values (?,?,?,?,?,?,?)");
         $resultado=$sql->execute([$nombrePaciente,$edadPaciente,$alergiasPaciente,$enfermedadesCroniPaciente,$urlImagen,$imagenPaciente,$area]);
-        header('location: ../pages/verPacientes.php');
+        header('location: ../pages/verPacientes.php?Consulta=0');
     }catch (Exception $ex){
         echo "error".$ex;
     }
