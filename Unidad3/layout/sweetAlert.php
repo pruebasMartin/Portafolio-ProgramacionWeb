@@ -10,7 +10,6 @@
                 }else if($_GET['Error'] == 402){
                     echo "swal('Precaución','Favor de llenar todos los campos','error');";
                 }
-                
                 echo "</script>";
             }
         ?>

@@ -44,7 +44,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
                     <h3>Pacientes</h3>
                     <br>
                     <p>En este apartado podemos ver la información de nuestros pacientes</p>
-                    <a href="verPacientes.php">Ver Pacientes</a>
+                    <a href="verPacientes.php?Consulta=0">Ver Pacientes</a>
                     <a href="AgregarPaciente.php?" style="background: #28f321;">Agregar Pacientes</a>
                 </div>
             </div>
