@@ -1,44 +1,57 @@
 <?php
-session_start();
-$name = $_POST['txtNombre'];
-$usuario = $_POST['txtUsuario'];
-$pwdOld = $_POST['txtPassword'];
-$pwdNew = $_POST['txtPasswordNew'];
-$id = $_POST['Id'];
+
+include "../Database/conexion.php";
+
+$nombrePaciente=$_POST['nombrePaciente'];
+$edadPaciente=$_POST['edadPaciente'];
+$alergiasPaciente=$_POST['alergiasPaciente'];
+$enfermedadesCroniPaciente=$_POST['enfermedadesCroPaciente'];
+$area=$_POST['especialidad'];
+$id = $_POST["Id"];
+
+$NombreArchivo = $_FILES['imagenPaciente']['name'];
+$directorioTemporal = $_FILES['imagenPaciente']['tmp_name'];
+$tamanio = $_FILES['imagenPaciente']['size'];
 
 
-$NombreArchivo = $_FILES['imagenProducto']['name'];
-$directorioTemporal = $_FILES['imagenProducto']['tmp_name'];
-$tamanio = $_FILES['imagenProducto']['size'];
 
-include ('conexion.php');
+//$IdUsuario = $_SESSION['IdUsuario'];
 
-$IdUsuario = $_SESSION['IdUsuario'];
-$sql = "select * from Usuario where idUsuario=" . $IdUsuario;
-$resultado = $cn->query($sql);
-$datosUsuario = $resultado->fetch(PDO::FETCH_OBJ);
 
-if($name != '' && $usuario != '' &&  $pwdOld != '' && $pwdNew != ''){
-    if($pwdOld == $datosUsuario->Contrasena){
-        if($_FILES['imagenProducto']['name'] != null){
-            $imagenProducto = file_get_contents($directorioTemporal);
-            $urlProductos = "img/";
+
+        if($_FILES['imagenPaciente']['name'] != null){
+            if($nombrePaciente != '' && $edadPaciente != '' && $alergiasPaciente != '' && $enfermedadesCroniPaciente != '' && $area != '' && $NombreArchivo != ''){
+            $imagenPaciente = file_get_contents($directorioTemporal);
+            $urlPacientes = "img/";
             $extImagen = strtolower(pathinfo($NombreArchivo, PATHINFO_EXTENSION));
-            $urlImagen = $urlProductos.$name.".".$extImagen;
-            move_uploaded_file($directorioTemporal,$urlImagen);
-            $sql = $cn->prepare("update Usuario set Nombre=?, Usuario=?, Contrasena=?, urlImagen=?, imagen=? where idUsuario=?");
-            $resultado = $sql->execute([$name, $usuario, $pwdNew, $urlImagen, $imagenProducto,$id]);
-            header('location: ../pages/login.php');
+            $urlImagen = $urlPacientes.$nombrePaciente.".".$extImagen;
+            move_uploaded_file($directorioTemporal,$urlImagen); 
+            try{
+            $sql = $cn->prepare("update paciente set NombrePaciente=?, Edad=?, Alergias=?, Enfermedades=?, urlImagen=?, imagen=?, idArea=? where idPaciente=?");
+            $resultado = $sql->execute([$nombrePaciente,$edadPaciente,$alergiasPaciente,$enfermedadesCroniPaciente,$urlImagen, $imagenPaciente, $area,$id]);
+            header('location: ../pages/verPacientes.php?Error=402');
+        }catch (Exception $ex){
+            header('location: ../pages/verPacientes.php?Error=402');    
+            }
+        
         }else{
-            $sql = $cn->prepare("update Usuario set Nombre=?, Usuario=?, Contrasena=? where idUsuario=?");
-            $resultado = $sql->execute([$name, $usuario, $pwdNew,$id]);
-            header('location: ../pages/login.php');
+            header('location: ../pages/verPacientes.php?Error=402');
         }
+        
     }else{
-        header('location: ../pages/ajustes.php?Error=400');
+        if($nombrePaciente != '' && $edadPaciente != '' && $alergiasPaciente != '' && $enfermedadesCroniPaciente != '' && $area != ''){
+            try{
+            $sql = $cn->prepare("update paciente set NombrePaciente=?, Edad=?, Alergias=?, Enfermedades=?, idArea=? where idPaciente=?");
+            $resultado = $sql->execute([$nombrePaciente,$edadPaciente,$alergiasPaciente,$enfermedadesCroniPaciente,$area,$id]);
+            header('location: ../pages/verPacientes.php?Error=402');
+        }catch (Exception $ex){
+            header('location: ../pages/verPacientes.php?Error=402');   
+            }
+        }  else{
+            header('location: ../pages/verPacientes.php?Error=402');
+        }
     }
-}else{
-    header('location: ../pages/ajustes.php?Error=402');
-}
+   
+
 
 ?>

@@ -5,13 +5,14 @@ if (!isset($_SESSION['NombreUsuario'])) {
 } else {
     include "../Database/conexion.php";
     $IdUsuario = $_SESSION['IdUsuario'];
-    $sql = "select * from Usuario where idUsuario=" . $IdUsuario;
+    $Idpaciente=$_GET['IdPaciente'];
+    $sql = "select * from paciente where idPaciente=" . $Idpaciente;
     $resultado = $cn->query($sql);
-    $imagenUsuario = $resultado->fetch(PDO::FETCH_OBJ);
+    $paciente = $resultado->fetch(PDO::FETCH_OBJ);
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -35,7 +36,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
     include("../layout/navbar.php");
     ?>
     <div class="container-sm">
-        <form action="../Database/agregarPaciente.php" class="estilo" method="post" enctype="multipart/form-data">
+        <form action="../Database/actualizarUsuario.php" class="estilo" method="post" enctype="multipart/form-data">
             <div class="card border" id="cardForm">
                 <h4 class="card-header text-center" id="titleForm">
                     <id= class="fas fa-user-edit" id="iconPacientLeft"></i>Actualizar Paciente<i class="fas fa-user-injured" id="iconPacientRight"></i>
@@ -43,14 +44,14 @@ if (!isset($_SESSION['NombreUsuario'])) {
                 <div class="card-body text-dark">
                     <div class="container">
                         <div class="form-group row">
-                            <input type="text" value="<?php echo $usu->idUsuario; ?>" name="Id" />
+                            <input type="hidden" value="<?php echo $paciente->idPaciente; ?>" name="Id" />
                             <div class="col-6">
                                 <label>Nombre</label>
-                                <input type="text" name="nombrePaciente" id="textos" class="form-control" aria-describedby="Nombre" placeholder="Nombre y apellidos">
+                                <input type="text" name="nombrePaciente" id="textos" class="form-control" aria-describedby="Nombre" value="<?php echo $paciente->NombrePaciente; ?>">
                             </div>
                             <div class="col-2">
                                 <label>Edad</label>
-                                <input type="number" name="edadPaciente" class="form-control">
+                                <input type="number" name="edadPaciente" value="<?php echo $paciente->Edad;?>" class="form-control" >
                             </div>
                             <div class="col-md-4">
                                 <label>Área asignada</label>
@@ -61,7 +62,14 @@ if (!isset($_SESSION['NombreUsuario'])) {
                                     $resultado = $cn->query($sql);
                                     $areas = $resultado->fetchAll(PDO::FETCH_OBJ);
                                     foreach ($areas as $area) {
+                                        if($paciente->idArea==$area->idArea){
+                                            echo "<option selected value='" . $area->idArea. "'>" . $area->NombreArea."</option>";
+
+                                        }else{
+
+                                        
                                         echo "<option value='" . $area->idArea . "'>" . $area->NombreArea . "</option>";
+                                    }
                                     }
                                     ?>
                                 </select>
@@ -72,11 +80,11 @@ if (!isset($_SESSION['NombreUsuario'])) {
                     <div class="d-flex flex-nowrap">
                         <div class="container">
                             <label>Alergias</label>
-                            <textarea name="alergiasPaciente" id="txtAreaA" class="form-control"></textarea>
+                            <textarea name="alergiasPaciente" id="txtAreaA" class="form-control"><?php echo $paciente->Alergias;?></textarea>
                         </div>
                         <div class="container">
                             <label>Enfermedades Crónicas</label>
-                            <textarea name="enfermedadesCroPaciente" id="txtAreaEC" class="form-control"></textarea>
+                            <textarea name="enfermedadesCroPaciente" id="txtAreaEC" class="form-control"><?php echo $paciente->Enfermedades;?></textarea>
                         </div>
                     </div>
                     <div class="container" id="seccionImg">
@@ -87,7 +95,10 @@ if (!isset($_SESSION['NombreUsuario'])) {
                             </div>
                             <div class="col-5" id="img1">
                                 <input type="hidden" class="form-control" name="imagenactual" id="imagenactual">
-                                <img src="../profile-user.png" width="150px" height="120px" id="imagenmuestra" class="rounded">
+                                <?php
+                               echo " <img src='../Database/" . $paciente->urlImagen . "' width='150px' height='120px' id='imagenmuestra' class='rounded'>";
+                                ?>
+                                
                             </div>
                         </div>
                     </div>
@@ -100,6 +111,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
             </div>
         </form>
     </div>
+    
     <?php
     include("../Layout/sweetAlert.php");
     ?>

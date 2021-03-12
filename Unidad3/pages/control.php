@@ -66,7 +66,9 @@ if (!isset($_SESSION['NombreUsuario'])) {
             </div>
         </div>
     </div>
-
+    <?php
+    include("../Layout/sweetAlert.php");
+    ?>
 </body>
 
 </html>
