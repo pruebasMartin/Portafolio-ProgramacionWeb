@@ -61,7 +61,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
                     <br>
                     <h3>Departamentos</h3>
                     <p>En este apartado podemos ver nuestors departamentos</p>
-                    <a href="#">Ver Departamentos</a>
+                    <a href="VerAreas.php">Ver Departamentos</a>
                 </div>
             </div>
         </div>
