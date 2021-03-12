@@ -70,9 +70,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
                     echo "<div class='d-flex flex-nowrap'>";
                     echo "<p id='propiedades'>Numero Habitación: </p><p class='card-text'>" . $area->Habitacion . "</p>";
                     echo "</div>";
-                    
                     echo "</div>";
-                    
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";

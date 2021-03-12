@@ -1,86 +1,90 @@
 .estilo {
     padding-top: 20px;
-  }
-  
-  #cardForm {
+}
+
+#cardForm {
     background: rgb(14, 26, 54);
-  }
-  
-  label {
+}
+
+label {
     color: rgba(247, 230, 2, 0.616);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 30px;
-  }
-  
-  .form-control {
+}
+
+.form-control {
     background: rgba(86, 91, 92, 0.178);
     color: rgb(197, 189, 189);
-  }
-  
-  #txtAreaEC,
-  #txtAreaA {
+}
+
+#txtAreaEC,
+#txtAreaA {
     width: 400px;
     height: 50px;
     max-height: 70px;
     min-height: 50px;
-  }
-  
-  #seccionImg {
+}
+
+#seccionImg {
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-  
-  #img1 {
+}
+
+#img1 {
     margin-left: 120px;
-  }
-  
-  #imagenmuestra {
+}
+
+#imagenmuestra {
     height: 130px;
     width: 130px;
-  }
-  
-  #titleForm {
+}
+
+#imagenmuestras {
+    height: 130px;
+    width: 130px;
+}
+
+#titleForm {
     color: rgba(247, 230, 2, 0.616);
     font-size: 42px;
-  }
-  
-  #iconPacientLeft {
+}
+
+#iconPacientLeft {
     margin-right: 20px;
-  }
-  
-  #iconPacientRight {
+}
+
+#iconPacientRight {
     margin-left: 20px;
-  }
-  
-  .container-sm {
+}
+
+.container-sm {
     margin-top: 50px;
-  }
-  
-  #btnSubmit {
+}
+
+#btnSubmit {
     background: rgb(2, 199, 67);
     margin-right: 28px;
     margin-left: 700px;
-  }
-  
-  #btnReturn {
+}
+
+#btnReturn {
     background: rgba(160, 2, 2, 0.986);
-  }
-  
-  #btnSubmit,
-  #btnReturn {
+}
+
+#btnSubmit,
+#btnReturn {
     color: black;
     font-size: 20px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     border-radius: 20px;
-  }
-  
-  #btnSubmit:hover {
+}
+
+#btnSubmit:hover {
     text-decoration: none;
     text-shadow: 0 10px 40px rgb(2, 199, 67);
-  }
-  
-  #btnReturn:hover {
+}
+
+#btnReturn:hover {
     text-decoration: none;
     text-shadow: 0 10px 40px rgba(255, 0, 0, 0.986);
-  }
-  
+}
