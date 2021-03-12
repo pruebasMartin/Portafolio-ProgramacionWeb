@@ -14,21 +14,22 @@ $numero=1;
 $NombreArchivo = $_FILES['imagenPaciente']['name'];
 $directorioTemporal = $_FILES['imagenPaciente']['tmp_name'];
 $tamanio = $_FILES['imagenPaciente']['size'];
+////fin cargaImagen
+
+if($nombrePaciente != '' && $edadPaciente != '' && $alergiasPaciente != '' && $enfermedadesCroniPaciente != '' && $area != '' && $NombreArchivo != ''){
+    
 $imagenPaciente = file_get_contents($directorioTemporal);
 $urlPacientes = "img/";
 $extImagen = strtolower(pathinfo($NombreArchivo, PATHINFO_EXTENSION));
 $urlImagen = $urlPacientes.$nombrePaciente.".".$extImagen;
 move_uploaded_file($directorioTemporal,$urlImagen);
-////fin cargaImagen
-
-try{
-    $sql=$cn->prepare("insert into Paciente ( NombrePaciente, Edad, Alergias, Enfermedades, urlImagen, imagen, idArea) values (?,?,?,?,?,?,?)");
-    $resultado=$sql->execute([$nombrePaciente,$edadPaciente,$alergiasPaciente,$enfermedadesCroniPaciente,$urlImagen,$imagenPaciente,$area]);
-
-}catch (Exception $ex){
-    echo "error".$ex;
+    try{
+        $sql=$cn->prepare("insert into Paciente ( NombrePaciente, Edad, Alergias, Enfermedades, urlImagen, imagen, idArea) values (?,?,?,?,?,?,?)");
+        $resultado=$sql->execute([$nombrePaciente,$edadPaciente,$alergiasPaciente,$enfermedadesCroniPaciente,$urlImagen,$imagenPaciente,$area]);
+        header('location: ../pages/verPacientes.php');
+    }catch (Exception $ex){
+        echo "error".$ex;
+    }
+}else{
+    header('location: ../pages/AgregarPaciente.php?Error=402');
 }
-
-//echo "".$nombrePaciente.$edadPaciente.$alergiasPaciente.$enfermedadesCroniPaciente.$urlImagen.$imagenPaciente.$numero;
-echo "<a href='../pages/control.php'>agregar</a>";
-?>

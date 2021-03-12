@@ -36,55 +36,12 @@ if (!isset($_SESSION['NombreUsuario'])) {
             margin: 0 auto 65px;
             overflow: hidden;
         }
-
-        .my_file {
-            position: absolute;
-            bottom: 0;
-            outline: none;
-            color: transparent;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 15px 120px;
-            cursor: pointer;
-            transition: 0.5s;
-            background: rgb(0, 0, 0, 0.5);
-            opacity: 0;
-        }
-
-        .my_file::-webkit-file-upload-button {
-            visibility: hidden;
-        }
-
-        .my_file::before {
-            content: '\f030';
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 50px;
-            color: #000;
-            display: inline-block;
-            -webkit-user-select: none;
-        }
-
-        .my_file::after {
-            content: 'Update';
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            color: #fff;
-            display: block;
-            top: 70px;
-            font-size: 14px;
-            position: absolute;
-        }
-
-        .my_file:hover {
-            opacity: 1;
-        }
     </style>
     <style type="text/css">
         body {
             background-color: rgb(3, 21, 48);
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -98,6 +55,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
             <div class="wrapper">
                 <input id="input-b1" type="file" class="my_file" name="imagenProducto" data-browse-on-zone-click="true" data-validation="required" data-validation-error-msg="Debe agregar un documento" onchange="return validarExt()">
             </div>
+            <i class="fas fa-user-edit" id="iconUpdate"></i>
             <div id="visorArchivo">
 
             </div>
@@ -120,7 +78,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
             <span class="fa fa-lock"></span>
             <input type="password" placeholder="Contraseña Nueva" name="txtPasswordNew" id="txtPassword">
         </div>
-        <input type="submit" class="submit" value="Cambiar">
+        <input type="submit" class="submit" value="Actualizar">
     </form>
 
     <script>

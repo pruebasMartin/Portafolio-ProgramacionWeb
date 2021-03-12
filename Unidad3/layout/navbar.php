@@ -5,9 +5,7 @@
         <img src="../Database/obtenerImagen.php?IdProducto=<?php echo $imagenUsuario->idUsuario ?>" class="imagen">
       </div>
       <a class="navbar-brand" href="#"><?php echo $_SESSION['NombreUsuario'] ?></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      
     </div>
 
     <div class="col-auto">
@@ -24,9 +22,9 @@
               Cuenta
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../pages/ajustes.php">Ajustes</a>
+              <a class="dropdown-item" href="../pages/ajustes.php"><i class="fas fa-tools" id="iconsItems"></i>Ajustes</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="../Database/cerrarSesion.php">Cerrar Sesión</a>
+              <a class="dropdown-item" href="../Database/cerrarSesion.php"><i class="fas fa-sign-out-alt" id="iconsItems"></i>Cerrar Sesión</a>
             </div>
           </li>
         </ul>

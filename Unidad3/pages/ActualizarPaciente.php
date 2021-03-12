@@ -11,17 +11,17 @@ if (!isset($_SESSION['NombreUsuario'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Paciente</title>
+    <title>Actualizar Paciente</title>
     <?php
     include('../layout/disenio.php');
     ?>
-    <link rel="stylesheet" href="../styles/AgregarPaciente.css">
+    <link rel="stylesheet" href="../styles/ActualizarPaciente.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <style type="text/css">
         body {
@@ -37,10 +37,13 @@ if (!isset($_SESSION['NombreUsuario'])) {
     <div class="container-sm">
         <form action="../Database/agregarPaciente.php" class="estilo" method="post" enctype="multipart/form-data">
             <div class="card border" id="cardForm">
-                <h4 class="card-header text-center" id="titleForm"><i class="fas fa-user-injured" id="iconPacientLeft"></i>Registro del paciente<i class="fas fa-user-injured" id="iconPacientRight"></i></h4>
+                <h4 class="card-header text-center" id="titleForm">
+                    <id= class="fas fa-user-edit" id="iconPacientLeft"></i>Actualizar Paciente<i class="fas fa-user-injured" id="iconPacientRight"></i>
+                </h4>
                 <div class="card-body text-dark">
                     <div class="container">
                         <div class="form-group row">
+                            <input type="text" value="<?php echo $usu->idUsuario; ?>" name="Id" />
                             <div class="col-6">
                                 <label>Nombre</label>
                                 <input type="text" name="nombrePaciente" id="textos" class="form-control" aria-describedby="Nombre" placeholder="Nombre y apellidos">

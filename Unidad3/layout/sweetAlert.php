@@ -5,9 +5,10 @@
                 echo "<script type='text/javascript'>";
                 if($_GET['Error'] == 400){
                     echo "swal('Precaución','Usuario y/o password incorrecto','warning');";
-                }
-                else if($_GET['Error'] == 401){
+                }else if($_GET['Error'] == 401){
                     echo "swal('Precaución','No ha iniciado sesión','error');";
+                }else if($_GET['Error'] == 402){
+                    echo "swal('Precaución','Favor de llenar todos los campos','error');";
                 }
                 
                 echo "</script>";
