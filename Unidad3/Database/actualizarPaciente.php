@@ -29,13 +29,13 @@ $tamanio = $_FILES['imagenPaciente']['size'];
             try{
             $sql = $cn->prepare("update paciente set NombrePaciente=?, Edad=?, Alergias=?, Enfermedades=?, urlImagen=?, imagen=?, idArea=? where idPaciente=?");
             $resultado = $sql->execute([$nombrePaciente,$edadPaciente,$alergiasPaciente,$enfermedadesCroniPaciente,$urlImagen, $imagenPaciente, $area,$id]);
-            header('location: ../pages/verPacientes.php?Error=402');
+            header('location: ../pages/control.php?Consulta=0');
         }catch (Exception $ex){
-            header('location: ../pages/verPacientes.php?Error=402');    
+            header('location: ../pages/control.php?Error=402');    
             }
         
         }else{
-            header('location: ../pages/verPacientes.php?Error=402');
+            header('location: ../pages/control.php?Error=402');
         }
         
     }else{
@@ -43,12 +43,12 @@ $tamanio = $_FILES['imagenPaciente']['size'];
             try{
             $sql = $cn->prepare("update paciente set NombrePaciente=?, Edad=?, Alergias=?, Enfermedades=?, idArea=? where idPaciente=?");
             $resultado = $sql->execute([$nombrePaciente,$edadPaciente,$alergiasPaciente,$enfermedadesCroniPaciente,$area,$id]);
-            header('location: ../pages/verPacientes.php?Error=402');
+            header('location: ../pages/verPacientes.php?Consulta=0');
         }catch (Exception $ex){
-            header('location: ../pages/verPacientes.php?Error=402');   
+            header('location: ../pages/control.php?Error=402');   
             }
         }  else{
-            header('location: ../pages/verPacientes.php?Error=402');
+            header('location: ../pages/control.php?Error=402');
         }
     }
    

@@ -4,7 +4,12 @@ if (!isset($_SESSION['NombreUsuario'])) {
     header("location: login.php?Error=401");
 } else {
     include "../Database/conexion.php";
+    
     $IdUsuario = $_SESSION['IdUsuario'];
+    $sql = "select * from Usuario where idUsuario=" . $IdUsuario;
+    $resultado = $cn->query($sql);
+    $imagenUsuario = $resultado->fetch(PDO::FETCH_OBJ);
+
     $Idpaciente=$_GET['IdPaciente'];
     $sql = "select * from paciente where idPaciente=" . $Idpaciente;
     $resultado = $cn->query($sql);
