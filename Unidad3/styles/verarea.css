@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#cards {
+    margin-top: 70px;
+}
+
+.card-img-top {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    margin-left: 80px;
+}
+
+.card {
+    height: 500px;
+    border-radius: 30px;
+    background-color: rgba(54, 54, 50, 0.849);
+}
+
+.card-title {
+    margin-left: 50px;
+    color: rgba(174, 192, 15, 0.932);
+}
+
+#propiedades {
+    color: rgba(174, 192, 15, 0.932);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#btnEditar {
+    background-color: rgba(4, 143, 161, 0.753);
+    margin-left: 5px;
+}
+
+#btnAlta {
+    background-color: rgba(196, 6, 6, 0.959);
+    margin-left: 10px;
+}
+
+#btnAlta,
+#btnEditar {
+    margin-top: 12px;
+    color: black;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.agrupacion {
+    margin-top: 10px;
+}
+
+#btnAdd {
+    margin-left: 10px;
+    background-color: rgb(228, 205, 3);
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+#btnRegresar {
+    margin-left: 10px;
+    background-color: rgb(228, 3, 3);
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+#btnAdd:hover {
+    box-shadow: 0 10px 20px rgb(228, 205, 3);
+}
+
+#iconAdd {
+    margin-left: 5px;
+    margin-right: 8px;
+}
