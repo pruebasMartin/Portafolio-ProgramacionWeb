@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap");
 
 :root{
-    --white-color:#fff;
+    --white-color:rgb(141, 167, 27);
     --black-color:#000;
     --light-grey-color:#95a5a6;
     --blue-color:#0074d9;
@@ -16,17 +16,58 @@ body {
   min-height: 100vh;
 }
 
+.my_file {
+  position: absolute;
+  bottom: 0;
+  outline: none;
+  color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 120px;
+  cursor: pointer;
+  transition: 0.5s;
+  background: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.my_file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.my_file::before {
+  content: '\f030';
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  color: #000;
+  display: inline-block;
+}
+
+.my_file::after {
+  content: 'Update';
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  top: 70px;
+  font-size: 14px;
+  position: absolute;
+}
+
+.my_file:hover {
+  opacity: 1;
+}
+
 .login{
   display:flex;
   flex-direction: column;
   align-items: center;
   margin: 50px auto ;
-  width:380px;
+  width:420px;
   padding:10px;
   letter-spacing:1px;
-  background-color:rgba(0,0,0,0.7);
+  background-color:rgba(36, 53, 107, 0.479);
   color:var(--white-color);
-  box-shadow:-4px 4px 12px 1px rgba(0,0,0,0.4);
+  box-shadow:-4px 4px 12px 1px rgba(210, 224, 15, 0.4);
 }  
 .login header{
   margin:0 0 35px 0;
@@ -38,6 +79,8 @@ body {
   width:100%;
   margin-bottom: 15px;
   display:flex;
+  border-radius: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .field span{
   color:var(--black-color);
@@ -52,23 +95,17 @@ body {
   padding:5px;
   color:var(--black-color);
   border:none;
+  border-radius: 20px;
 }
 .field input::placeholder{
-  color:var(--light-gray-color);
+  color:rgb(12, 12, 12);
 }
 input:focus,
 input:active,
 input:hover{
   outline:none;
 }
-.forgot-password{
-  width:100%;
-  margin-bottom:15px;
-}
-.forgot-password a{
-  color:var(--white-color);
-  text-decoration: none;
-}
+
 .submit{
   display:flex;
   align-items:center;
@@ -76,25 +113,18 @@ input:hover{
   width:100%;
   height:45px;
   margin-bottom:45px;
-  font-size:1.2rem;
-  color:var(--white-color);
-  background-color:var(--blue-color);
+  font-size:2rem;
+  color: #254d01;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color:#2196f3;
   border:none;
   cursor: pointer;
   transition:all 0.2s linear;
 }
+
 .submit:hover{
-  background-color:var(--dark-blue-color);
-}
-.login-form-copy{
-  margin-bottom:15px;
-}
-.login-form__sign-up{
-  text-decoration: none;
-  color:var(--blue-color);
-}
-.login-form__sign-up:hover{
-  text-decoration: underline;
+  background-color: rgba(209, 231, 7, 0.692);
+  color: rgba(0, 9, 92, 0.788);
 }
 
 #visorArchivo {
@@ -105,6 +135,12 @@ input:hover{
   border-radius: 50%;
   background-size: 100% 100%;
   margin: 0 auto 65px;
-  margin-left: 50px;
   overflow: hidden;
+}
+
+#iconUpdate{
+  margin-top: 30px;
+  font-size: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
 }

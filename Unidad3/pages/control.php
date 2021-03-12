@@ -28,11 +28,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
             background-color: rgb(3, 21, 48);
         }
     </style>
-
     <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
-
 </head>
 
 <body>
@@ -47,9 +43,9 @@ if (!isset($_SESSION['NombreUsuario'])) {
                     <br><br>
                     <h3>Pacientes</h3>
                     <br>
-                    <p>Los salud de nuestros pacientes es lo más importante para mi.</p>
-                    <a href="#">Ver Pacientes</a>
-                    <a href="AgregarPaciente.php" style="background: #28f321;">Agregar Pacientes</a>
+                    <p>En este apartado podemos ver la información de nuestros pacientes</p>
+                    <a href="verPacientes.php">Ver Pacientes</a>
+                    <a href="AgregarPaciente.php?" style="background: #28f321;">Agregar Pacientes</a>
                 </div>
             </div>
         </div>

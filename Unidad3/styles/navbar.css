@@ -17,11 +17,30 @@
 .circulo {
   width: 5%;
   height: 5%;
-  background-color: #2e54e0;
+  background-color: #c5e02e;
   border-radius: 100%;
+  margin-right: 20px;
 }
 
 .circulo > .imagen {
   width: 100%;
   height: 100%;
+  margin-bottom: 5px;
+}
+
+.dropdown-menu{
+  background: rgba(56, 55, 58, 0.938);
+}
+
+.dropdown-item{
+  font-size: 16px;
+  color: #c6c8cecc;
+}
+
+.dropdown-item:hover{
+  background: rgba(12, 17, 175, 0.377);
+}
+
+#iconsItems{
+  margin-right: 10px;
 }
