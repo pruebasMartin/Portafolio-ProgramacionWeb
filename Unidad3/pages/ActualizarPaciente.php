@@ -36,7 +36,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
     include("../layout/navbar.php");
     ?>
     <div class="container-sm">
-        <form action="../Database/actualizarUsuario.php" class="estilo" method="post" enctype="multipart/form-data">
+        <form action="../Database/actualizarPaciente.php" class="estilo" method="post" enctype="multipart/form-data">
             <div class="card border" id="cardForm">
                 <h4 class="card-header text-center" id="titleForm">
                     <id= class="fas fa-user-edit" id="iconPacientLeft"></i>Actualizar Paciente<i class="fas fa-user-injured" id="iconPacientRight"></i>
