@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#txtPregunta{
+    margin-top: 160px;
+    margin-bottom: 20px;
+}
+
+.card-img-top{
+    width: 120px;
+    height: 120px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+
+#btnBaja{
+    margin-right: 20px;
+}
+
+#btnBaja, #btnReturn{
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+#icons{
+    margin-left: 2px;
+    margin-right: 8px;
+}

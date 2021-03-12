@@ -36,7 +36,7 @@ if (!isset($_SESSION['NombreUsuario'])) {
     ?>
     <br>
     
-    <a href="AgregarPaciente.php" class="regresar" id="btnRegresar"> <i class="fas fa-undo-alt" id="iconAdd"></i> Regresar </a>
+    <a href="control.php" class="regresar" id="btnRegresar"> <i class="fas fa-undo-alt" id="iconAdd"></i> Regresar </a>
 
     <div class="container" id="cards">
         <div class="row row-cols-1 row-cols-md-3">
